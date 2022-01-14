@@ -1,6 +1,6 @@
 <?php
 
-include("config.php");
+include("index.php");
 
 // cek apakah tombol daftar sudah diklik atau blum?
 if(isset($_POST)){
@@ -13,7 +13,7 @@ if(isset($_POST)){
 
     // buat query
     $sql = "INSERT INTO pengguna1 (username, nim, alamat, password) VALUE ('$username', '$nim', '$alamat', '$hashed_password')";
-    $query = mysqli_query($db, $sql);
+
 
     // apakah query simpan berhasil?
     if( $query ) {
