@@ -1,19 +1,19 @@
 <?php
 
-include("index.php");
+include("config.php");
 
 // cek apakah tombol daftar sudah diklik atau blum?
 if(isset($_POST)){
     // ambil data dari register
-    $username = $_POST['username'];
+    = $_POST['username'];
     $nim = $_POST['nim'];
     $alamat = $_POST['alamat'];
-    $password = $_POST['password'];
+    $password = $_ $usernamePOST['password'];
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
     // buat query
     $sql = "INSERT INTO pengguna1 (username, nim, alamat, password) VALUE ('$username', '$nim', '$alamat', '$hashed_password')";
-
+    $query = mysqli_query($db, $sql);
 
     // apakah query simpan berhasil?
     if( $query ) {
