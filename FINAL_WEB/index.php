@@ -3,7 +3,7 @@
 	<title>Membuat Halaman Web </title>
 	<!-- menghubungkan dengan file css -->
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- menghubungkan dengan file jquery -->
+	<!-- Menghubungkan dengan file jquery -->
 	<script type="text/javascript" src="jquery.js"></script>
 </head>
 <body>
